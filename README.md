@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+2018.11.02
 
 ### Project Title
-Replace the Project Title
+Bikeshare Data Exploration Tool
 
 ### Description
-Describe what your project is about and what it does
+This project allows users to review statistics regarding bikeshare data in either Chicago, New York, or Washington. It is an interactive platform that runs in the terminal.
 
 ### Files used
-Include the files used
+bikeshare.py
+washington.csv
+new_york_city.csv
+chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Thanks to Juno Lee and Richard Kalehoff of Udacity!
