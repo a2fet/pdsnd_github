@@ -5,7 +5,7 @@
 Bikeshare Data Exploration Tool
 
 ### Description
-This project allows users to review statistics regarding bikeshare data in either Chicago, New York, or Washington. It is an interactive platform that runs in the terminal.
+This project allows users to request and review statistics related to bikeshare data in either Chicago, New York, or Washington. It is an interactive platform that runs in the terminal.
 
 ### Files used
 bikeshare.py
