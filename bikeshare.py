@@ -184,9 +184,10 @@ def user_stats(df, city):
     print('-'*40)
 
 def restart():
+    """Allows users to choose to restart or quit tool"""
     restart = input('\nWould you like to restart? Enter yes or no.\n')
     if restart.lower() != 'yes':
-        print("Okay, bye!")
+        print("Okay, bye, and please come back soon. The program is only getting better and we need to save the planet!")
         quit()
     else:
         main()
@@ -201,11 +202,21 @@ def main():
         trip_duration_stats(df)
         user_stats(df, city)
 
-        raw = input("Would you like to see the first 10 rows of raw data? Enter yes or no.\n")
-        if raw.lower() == 'yes':
-            print(df.head(10))
+        raw = input("Would you like to see the first 10 rows of data?\n")
+        if raw.lower() == 'no':
             restart()
-        elif raw.lower() == 'no':
+        elif raw.lower() == 'yes':
+            print(df.head(10))
+            i = 10
+            while True:
+                ten = input("10 more rows of data? Yes or no.")
+                if ten.lower() == 'no':
+                    restart()
+                elif ten.lower() == 'yes':
+                    print(df[i:i+10])
+                    i += 10
+                else:
+                    print("Your input must be yes or no.")
             restart()
         else:
             print("Your input must be yes or no.")
