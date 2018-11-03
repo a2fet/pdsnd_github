@@ -187,7 +187,7 @@ def restart():
     """Allows users to choose to restart or quit tool"""
     restart = input('\nWould you like to restart? Enter yes or no.\n')
     if restart.lower() != 'yes':
-        print("Okay, bye!")
+        print("Okay, bye, and please come back soon. The program is only getting better and we need to save the planet!")
         quit()
     else:
         main()
